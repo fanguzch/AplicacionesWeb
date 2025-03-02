@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de propiedades CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Propiedades CSS de etiquetas específicas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Nombre de la propiedad</th>
+                <th>Función</th>
+                <th>Posibles valores</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">&lt;blockquote&gt;</td>
+                <td>margin</td>
+                <td>Define el margen del bloque de cita</td>
+                <td>auto, px, em, %, inherit</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Espaciado interno del bloque de cita</td>
+                <td>px, em, %, inherit</td>
+            </tr>
+            <tr>
+                <td>border-left</td>
+                <td>Define el borde izquierdo para resaltar la cita</td>
+                <td>none, solid, dashed, px, color</td>
+            </tr>
+            <tr>
+                <td rowspan="2">&lt;dd&gt;</td>
+                <td>margin-left</td>
+                <td>Espaciado a la izquierda del término definido</td>
+                <td>px, em, %, auto, inherit</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>Define el estilo del texto</td>
+                <td>normal, italic, oblique</td>
+            </tr>
+            <tr>
+                <td rowspan="2">&lt;abbr&gt;</td>
+                <td>text-decoration</td>
+                <td>Define la apariencia del subrayado o línea sobre el texto abreviado</td>
+                <td>none, underline, overline, line-through</td>
+            </tr>
+            <tr>
+                <td>cursor</td>
+                <td>Define el tipo de cursor al pasar sobre el elemento</td>
+                <td>pointer, default, help</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>font-weight</td>
+                <td>Define la intensidad del peso de la fuente</td>
+                <td>bold, normal, lighter, bolder, 100-900</td>
+            </tr>
+            <tr>
+                <td rowspan="3">&lt;code&gt;</td>
+                <td>font-family</td>
+                <td>Define la fuente utilizada en el código</td>
+                <td>monospace, sans-serif, serif, cursive</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Fondo del bloque de código</td>
+                <td>color-name, hex, rgb, rgba, hsl</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Espaciado interno para mejorar la visibilidad</td>
+                <td>px, em, %</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>font-style</td>
+                <td>Define el estilo de la fuente en texto enfatizado</td>
+                <td>normal, italic, oblique</td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt</td>
+                <td>background-color</td>
+                <td>Define el color de fondo del texto resaltado</td>
+                <td>color-name, hex, rgb, rgba, hsl</td>
+            </tr>
+            <tr>
+                <td>&lt;s&gt;</td>
+                <td>text-decoration</td>
+                <td>Añade una línea sobre el texto tachado</td>
+                <td>none, underline, overline, line-through</td>
+            </tr>
+            <tr>
+                <td>&lt;u&gt;</td>
+                <td>text-decoration</td>
+                <td>Subraya el texto</td>
+                <td>none, underline, overline, line-through</td>
+            </tr>
+            <tr>
+                <td rowspan="4">&lt;button&gt;</td>
+                <td>background-color</td>
+                <td>Define el color de fondo del botón</td>
+                <td>color-name, hex, rgb, rgba, hsl</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Define el borde del botón</td>
+                <td>none, solid, dashed, dotted, px</td>
+            </tr>
+            <tr>
+                <td>cursor</td>
+                <td>Define el cursor al pasar sobre el botón</td>
+                <td>pointer, default, wait, text, move</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Espaciado interno del botón</td>
+                <td>px, em, %</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
