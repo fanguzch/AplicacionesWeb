@@ -18,25 +18,21 @@
   </style>
 </head>
 <body>
-  <header>
     <h1>Display Flex vs Grid</h1>
-  
     <h2>Flexbox</h2>
     <p><strong>Características:</strong></p>
     <ul>
-      <li>Al trabajar con Flexbox se deben considerar dos ejes: el <strong>eje principal</strong> y el <strong>eje transversal</strong>.</li>
+      <li>Al trabajar con Flexbox se deben considerar dos ejes: el eje principal y el eje transversal.</li>
       <li>El <code>flex-direction</code> define el eje principal, mientras que el eje transversal es perpendicular a éste.</li>
       <li>Flexbox no asume un modo de escritura predefinido; no presupone que las líneas comiencen en la parte superior izquierda y se ubiquen únicamente a la derecha.</li>
-      <li>El área de una página configurada con Flexbox se denomina <strong>contenedor flexible</strong> (<code>display: flex</code>). Los hijos directos de este contenedor se convierten en <strong>elementos flexibles</strong> o <em>flex items</em>.</li>
+      <li>El área de una página configurada con Flexbox se denomina contenedor flexible (<code>display: flex</code>). Los hijos directos de este contenedor se convierten en elementos flexibles o flex items.</li>
     </ul>
-    
     <p><strong>Propiedades en los elementos flexibles:</strong></p>
     <ul>
       <li><code>flex-grow</code>: Se asigna un entero positivo para que, si hay espacio disponible, el elemento crezca en el eje principal partiendo de su <code>flex-basis</code>.</li>
       <li><code>flex-shrink</code>: Controla la reducción del elemento cuando el espacio es limitado.</li>
       <li><code>flex-basis</code>: Define el tamaño inicial del elemento, determinando el espacio base a partir del cual se puede crecer o encoger.</li>
     </ul>
-    
     <p>Existen valores abreviados (shorthand) comunes que se usan en la mayoría de los casos:</p>
     <ul>
       <li><code>flex: initial</code></li>
@@ -44,7 +40,6 @@
       <li><code>flex: none</code></li>
       <li><code>flex: &lt;número positivo&gt;</code></li>
     </ul>
-    
     <p><strong>Casos de uso de Flexbox:</strong></p>
     <ul>
       <li><strong>Navegación:</strong> Mostrar una lista de elementos en una barra horizontal, uno de los ejemplos más comunes de Flexbox.</li>
@@ -53,7 +48,6 @@
       <li><strong>Objetos multimedia:</strong> Facilita el diseño de elementos que combinan imágenes con texto, permitiendo invertir la posición de la imagen.</li>
       <li><strong>Controles de formularios:</strong> Alinea etiquetas, campos de entrada y botones en formularios mediante la agrupación en un contenedor flexible.</li>
     </ul>
-  
     <h2>Grid</h2>
     <p><strong>Características:</strong></p>
     <ul>
@@ -62,8 +56,8 @@
       <li>Se pueden crear cuadrículas con tamaños fijos (por ejemplo, en píxeles) o adaptables, según la disposición deseada.</li>
       <li>Permite ubicar elementos en una posición precisa usando números de línea, nombres o definiendo áreas específicas de la cuadrícula.</li>
       <li>Incluye un algoritmo para controlar la colocación de elementos que no tienen una posición explícita.</li>
-      <li>La estructura de la cuadrícula se define mediante <code>grid-template-rows</code> y <code>grid-template-columns</code>, creando <strong>tracks</strong> (espacios entre líneas).</li>
-      <li>El <strong>grid cell</strong> es la unidad mínima (similar a una celda de tabla) y varios pueden formar un <strong>grid area</strong> que, a diferencia de Flexbox, debe ser rectangular.</li>
+      <li>La estructura de la cuadrícula se define mediante <code>grid-template-rows</code> y <code>grid-template-columns</code>, creando tracks (espacios entre líneas).</li>
+      <li>El grid cell es la unidad mínima (similar a una celda de tabla) y varios pueden formar un grid area que, a diferencia de Flexbox, debe ser rectangular.</li>
       <li>Un elemento en la cuadrícula puede convertirse en un contenedor de otra cuadrícula.</li>
       <li>Se pueden superponer elementos en una misma celda o área, controlando la superposición mediante la propiedad <code>z-index</code>.</li>
     </ul>
@@ -72,12 +66,11 @@
       <li><strong>Diseños de tarjetas en cuadrícula:</strong> Se adapta bien a catálogos de productos o galerías de imágenes.</li>
       <li><strong>Superposición de elementos:</strong> Colocar elementos encima de otros usando <code>z-index</code> sin problemas.</li>
     </ul>
-  
     <h2>Diferencias entre Flexbox y Grid</h2>
     <p>La decisión entre Flexbox y Grid se basa en la necesidad del diseño:</p>
     <ul>
-      <li><strong>Flexbox</strong> es un método unidimensional. Se utiliza cuando se necesita controlar la distribución de elementos en una sola dirección (ya sea fila o columna). Es ideal para componentes pequeños o diseños lineales.</li>
-      <li><strong>Grid</strong> es bidimensional y permite gestionar filas y columnas simultáneamente. Es recomendable para diseños complejos o cuando se requiere ubicar elementos de forma precisa en diferentes direcciones.</li>
+      <li>Flexbox es un método unidimensional. Se utiliza cuando se necesita controlar la distribución de elementos en una sola dirección (ya sea fila o columna). Es ideal para componentes pequeños o diseños lineales.</li>
+      <li>Grid es bidimensional y permite gestionar filas y columnas simultáneamente. Es recomendable para diseños complejos o cuando se requiere ubicar elementos de forma precisa en diferentes direcciones.</li>
     </ul>
     <p>En Grid, la mayor parte de la especificación del tamaño se realiza en el contenedor (definiendo los tracks), mientras que en Flexbox el control sobre el tamaño se aplica a cada elemento de manera individual.</p>
     <h2>¿Cuándo usar Flexbox o Grid?</h2>
@@ -86,5 +79,99 @@
       <li>¿Necesitamos controlar el layout únicamente por filas o columnas? Si es así, se utiliza Flexbox.</li>
       <li>¿Se requiere controlar el layout tanto en filas como en columnas? En este caso, se utiliza Grid.</li>
     </ul>
+    <hr>
+    <h1>Nomenclatura CSS</h1>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Propuesta</th>
+          <th>Descripción</th>
+          <th>Ventajas</th>
+          <th>Desventajas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Block-Element-Modifier (BEM)</th>
+          <td>BEM es una metodología que divide la interfaz en bloques independientes (Block), sus componentes internos (Element) y variaciones de estos bloques o elementos (Modifier). Esta estructura facilita la reutilización y la claridad del código.</td>
+          <td>
+            <ul>
+              <li>Facilita el desarrollo de la interfaz y lo hace rápido, incluso con una interfaz de usuario compleja, y permite reutilizar el código existente sin copiar y pegar.</li>
+              <li>Los bloques son funcionalmente independientes y se pueden reutilizar, mover o anidar sin afectar su entorno.</li>
+              <li>La estructura de archivos ramificada facilita el mantenimiento del código y su reutilización.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>La separación de preocupaciones entre bloques, elementos y modificadores puede requerir una planificación más detallada.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Oriented Object (OOCSS)</th>
+          <td>Se centra en crear “objetos” reutilizables separando la estructura del contenido y el diseño, permitiendo compartir estilos.</td>
+          <td>
+            <ul>
+              <li>Alta reutilización de componentes</li>
+              <li>Claridad en la separación de responsabilidades</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Puede requerir múltiples clases en un mismo elemento</li>
+              
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Scalable and Modular Architecture (SMACSS)</th>
+          <td>Propone organizar el CSS en categorías (base, layout, módulo, estado y tema) para facilitar la escalabilidad sin ser demasiado estricto.</td>
+          <td>
+            <ul>
+              <li>Flexible y modular</li>
+              <li>Facilita la escalabilidad en proyectos complejos</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Requiere seguir una convención clara para evitar inconsistencias</li>
+              <li>No soluciona por sí solo el problema de colisiones de nombres</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Atomic CSS</th>
+          <td>Se basa en clases utilitarias muy específicas que se aplican directamente en el HTML, permitiendo estilos rápidos sin escribir CSS personalizado.</td>
+          <td>
+            <ul>
+              <li>Desarrollo ágil con clases predefinidas</li>
+              <li>Los estilos se manejan a través de clases no relacionadas con el contenido, por lo que se pueden copiar y pegar módulos existentes para comenzar.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>El HTML se llena de clases, lo que puede dificultar la lectura</li>
+              <li>Menor semántica y flexibilidad para diseños muy particulares</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Inverted Triangle (ITCSS)</th>
+          <td>ITCSS es una metodología que organiza el código CSS en una estructura de triángulo invertido, desde estilos generales hasta específicos, distribuidos en capas como Settings, Tools, Generic, Elements, Objects, Components y Utilities.</td>
+          <td>
+            <ul>
+              <li>Mantiene un código bien organizado y escalable</li>
+              <li>Ayuda a mantener una especificidad adecuada y evitar problemas de conflictos de estilos.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Falta de documentación</li>
+              <li>Pueden resultar excesivas en proyectos pequeños</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>    
 </body>
 </html>
