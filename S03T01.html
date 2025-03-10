@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Flex vs Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Display Flex vs Grid</h1>
+  
+    <h2>Flexbox</h2>
+    <p><strong>Características:</strong></p>
+    <ul>
+      <li>Al trabajar con Flexbox se deben considerar dos ejes: el <strong>eje principal</strong> y el <strong>eje transversal</strong>.</li>
+      <li>El <code>flex-direction</code> define el eje principal, mientras que el eje transversal es perpendicular a éste.</li>
+      <li>Flexbox no asume un modo de escritura predefinido; no presupone que las líneas comiencen en la parte superior izquierda y se ubiquen únicamente a la derecha.</li>
+      <li>El área de una página configurada con Flexbox se denomina <strong>contenedor flexible</strong> (<code>display: flex</code>). Los hijos directos de este contenedor se convierten en <strong>elementos flexibles</strong> o <em>flex items</em>.</li>
+    </ul>
+    
+    <p><strong>Propiedades en los elementos flexibles:</strong></p>
+    <ul>
+      <li><code>flex-grow</code>: Se asigna un entero positivo para que, si hay espacio disponible, el elemento crezca en el eje principal partiendo de su <code>flex-basis</code>.</li>
+      <li><code>flex-shrink</code>: Controla la reducción del elemento cuando el espacio es limitado.</li>
+      <li><code>flex-basis</code>: Define el tamaño inicial del elemento, determinando el espacio base a partir del cual se puede crecer o encoger.</li>
+    </ul>
+    
+    <p>Existen valores abreviados (shorthand) comunes que se usan en la mayoría de los casos:</p>
+    <ul>
+      <li><code>flex: initial</code></li>
+      <li><code>flex: auto</code></li>
+      <li><code>flex: none</code></li>
+      <li><code>flex: &lt;número positivo&gt;</code></li>
+    </ul>
+    
+    <p><strong>Casos de uso de Flexbox:</strong></p>
+    <ul>
+      <li><strong>Navegación:</strong> Mostrar una lista de elementos en una barra horizontal, uno de los ejemplos más comunes de Flexbox.</li>
+      <li><strong>Centrar elementos:</strong> Facilita la tarea de centrar contenido vertical y horizontalmente.</li>
+      <li><strong>Diseño de tarjetas con pie de página:</strong> Permite que el área de contenido crezca (<code>flex: 1</code>) empujando el pie de página hacia abajo.</li>
+      <li><strong>Objetos multimedia:</strong> Facilita el diseño de elementos que combinan imágenes con texto, permitiendo invertir la posición de la imagen.</li>
+      <li><strong>Controles de formularios:</strong> Alinea etiquetas, campos de entrada y botones en formularios mediante la agrupación en un contenedor flexible.</li>
+    </ul>
+  
+    <h2>Grid</h2>
+    <p><strong>Características:</strong></p>
+    <ul>
+      <li>CSS Grid Layout introduce un sistema de cuadrícula bidimensional que permite organizar el contenido en filas y columnas.</li>
+      <li>Se puede utilizar para dividir una página en regiones principales o para definir la relación de tamaño, posición y capas entre partes de una interfaz.</li>
+      <li>Se pueden crear cuadrículas con tamaños fijos (por ejemplo, en píxeles) o adaptables, según la disposición deseada.</li>
+      <li>Permite ubicar elementos en una posición precisa usando números de línea, nombres o definiendo áreas específicas de la cuadrícula.</li>
+      <li>Incluye un algoritmo para controlar la colocación de elementos que no tienen una posición explícita.</li>
+      <li>La estructura de la cuadrícula se define mediante <code>grid-template-rows</code> y <code>grid-template-columns</code>, creando <strong>tracks</strong> (espacios entre líneas).</li>
+      <li>El <strong>grid cell</strong> es la unidad mínima (similar a una celda de tabla) y varios pueden formar un <strong>grid area</strong> que, a diferencia de Flexbox, debe ser rectangular.</li>
+      <li>Un elemento en la cuadrícula puede convertirse en un contenedor de otra cuadrícula.</li>
+      <li>Se pueden superponer elementos en una misma celda o área, controlando la superposición mediante la propiedad <code>z-index</code>.</li>
+    </ul>
+  
+    <h2>Diferencias y Casos en los que conviene utilizar uno u otro</h2>
+    <p>La decisión entre Flexbox y Grid se basa en la necesidad del diseño:</p>
+    <ul>
+      <li><strong>Flexbox</strong> es un método unidimensional. Se utiliza cuando se necesita controlar la distribución de elementos en una sola dirección (ya sea fila o columna). Es ideal para componentes pequeños o diseños lineales.</li>
+      <li><strong>Grid</strong> es bidimensional y permite gestionar filas y columnas simultáneamente. Es recomendable para diseños complejos o cuando se requiere ubicar elementos de forma precisa en diferentes direcciones.</li>
+    </ul>
+    <p>En Grid, la mayor parte de la especificación del tamaño se realiza en el contenedor (definiendo los tracks), mientras que en Flexbox el control sobre el tamaño se aplica a cada elemento de manera individual.</p>
+    <p>Por tanto, la pregunta clave es:</p>
+    <ul>
+      <li>¿Necesitamos controlar el layout únicamente por filas o columnas? Si es así, se utiliza Flexbox.</li>
+      <li>¿Se requiere controlar el layout tanto en filas como en columnas? En este caso, se utiliza Grid.</li>
+    </ul>
+</body>
+</html>
