@@ -9,10 +9,6 @@
       line-height: 1.6;
       margin: 20px;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
     code {
       background-color: #f4f4f4;
       padding: 2px 4px;
@@ -71,15 +67,21 @@
       <li>Un elemento en la cuadrícula puede convertirse en un contenedor de otra cuadrícula.</li>
       <li>Se pueden superponer elementos en una misma celda o área, controlando la superposición mediante la propiedad <code>z-index</code>.</li>
     </ul>
+    <p><strong>Casos de uso de Grid:</strong></p>
+    <ul>
+      <li><strong>Diseños de tarjetas en cuadrícula:</strong> Se adapta bien a catálogos de productos o galerías de imágenes.</li>
+      <li><strong>Superposición de elementos:</strong> Colocar elementos encima de otros usando <code>z-index</code> sin problemas.</li>
+    </ul>
   
-    <h2>Diferencias y Casos en los que conviene utilizar uno u otro</h2>
+    <h2>Diferencias entre Flexbox y Grid</h2>
     <p>La decisión entre Flexbox y Grid se basa en la necesidad del diseño:</p>
     <ul>
       <li><strong>Flexbox</strong> es un método unidimensional. Se utiliza cuando se necesita controlar la distribución de elementos en una sola dirección (ya sea fila o columna). Es ideal para componentes pequeños o diseños lineales.</li>
       <li><strong>Grid</strong> es bidimensional y permite gestionar filas y columnas simultáneamente. Es recomendable para diseños complejos o cuando se requiere ubicar elementos de forma precisa en diferentes direcciones.</li>
     </ul>
     <p>En Grid, la mayor parte de la especificación del tamaño se realiza en el contenedor (definiendo los tracks), mientras que en Flexbox el control sobre el tamaño se aplica a cada elemento de manera individual.</p>
-    <p>Por tanto, la pregunta clave es:</p>
+    <h2>¿Cuándo usar Flexbox o Grid?</h2>
+    <p>La elección entre Flexbox y Grid depende del tipo de diseño:</p>
     <ul>
       <li>¿Necesitamos controlar el layout únicamente por filas o columnas? Si es así, se utiliza Flexbox.</li>
       <li>¿Se requiere controlar el layout tanto en filas como en columnas? En este caso, se utiliza Grid.</li>
