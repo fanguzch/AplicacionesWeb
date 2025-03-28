@@ -1,0 +1,27 @@
+#numTelefonico {
+    background-color: black;
+    color: #FFF
+}
+
+#title {
+    background-color: #202020;
+    color: #FFF;
+}
+
+.cuerpoCalculadora {
+    background-color: #5F625E;
+    width: 462px;
+    height: 636px;
+    margin: 20px;
+
+}
+
+.pantalla {
+    background-color: #4F5B49;
+    color: #FFF;
+    text-align: right;
+}
+
+.boton {
+    padding: 50px;
+}
