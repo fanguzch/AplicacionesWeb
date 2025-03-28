@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora virtual</title>
     <link rel="stylesheet" href="/examen-01/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
-        <p id="numTelefonico">Numero telefónico</p>
+        <p id="numTelefonico">
+            <i class="bi bi-telephone-fill"></i> +506 8888-7777
+        </p>
         <p id="title">Calculadora virtual</p>
     </header>
     <main>
         <section class="cuerpoCalculadora">
-            <div class="pantalla">Ejemplo</div> <!--Actualizar número (Input ?)-->
-            <button class="boton">C</button>
-            <button class="boton">Delete</button>
-            <button class="boton">%</button>
-            <button class="boton">/</button>
-            <button class="boton">X</button>
-            <button class="boton">-</button>
-            <button class="boton">+</button>
-            <button class="boton">=</button>
-            <button class="boton">.</button>
-            <button class="boton">+/-</button>
-            <button class="boton">0</button>
-            <button class="boton">1</button>
-            <button class="boton">2</button>
-            <button class="boton">3</button>
-            <button class="boton">4</button>
-            <button class="boton">5</button>
-            <button class="boton">6</button>
-            <button class="boton">7</button>
-            <button class="boton">8</button>
-            <button class="boton">9</button>
-            
+            <div class="pantalla"></div> 
+
+            <div class="contenedorBotones">
+                <button class="boton botonOperador">C</button>
+                <button class="boton botonOperador">⌫</button>
+                <button class="boton botonOperador">%</button>
+                <button class="boton botonOperador">/</button>
+                <button class="boton">7</button>
+                <button class="boton">8</button>
+                <button class="boton">9</button>
+                <button class="boton botonOperador">x</button>
+                <button class="boton">4</button>
+                <button class="boton">5</button>
+                <button class="boton">6</button>
+                <button class="boton botonOperador">-</button>
+                <button class="boton">1</button>
+                <button class="boton">2</button>
+                <button class="boton">3</button>
+                <button class="boton botonOperador">+</button>
+                <button class="boton botonOperador">+/-</button>
+                <button class="boton">0</button>
+                <button class="boton botonOperador">.</button>
+                <button class="boton botonOperador">=</button>
+            </div>
         </section>
     </main>
+    <script src="/examen-01/script.js"></script>
 </body>
 </html>
